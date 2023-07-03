@@ -103,7 +103,7 @@
 					},
 					"executorSize": "Small",
 					"conf": {
-						"spark.dynamicAllocation.enabled": null,
+						"spark.dynamicAllocation.enabled": false,
 						"spark.dynamicAllocation.minExecutors": 2,
 						"spark.dynamicAllocation.maxExecutors": 2
 					},
@@ -316,6 +316,9 @@
 							},
 							"wildcardFileName": "*.parquet",
 							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "ParquetReadSettings"
 						}
 					},
 					"sink": {
@@ -462,12 +465,14 @@
 						},
 						"type": "BigDataPoolReference"
 					},
+					"executorSize": "Small",
 					"conf": {
-						"spark.dynamicAllocation.enabled": null,
-						"spark.dynamicAllocation.minExecutors": null,
-						"spark.dynamicAllocation.maxExecutors": null
+						"spark.dynamicAllocation.enabled": false,
+						"spark.dynamicAllocation.minExecutors": 2,
+						"spark.dynamicAllocation.maxExecutors": 2
 					},
-					"numExecutors": null
+					"driverSize": "Small",
+					"numExecutors": 2
 				}
 			}
 		],
