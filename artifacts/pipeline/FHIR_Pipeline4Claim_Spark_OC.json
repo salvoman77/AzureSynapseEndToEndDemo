@@ -483,11 +483,11 @@
 			},
 			"DatabaseName": {
 				"type": "string",
-				"defaultValue": "synapsedemoe2e"
+				"defaultValue": "demo_sql_pool"
 			},
 			"ServerName": {
 				"type": "string",
-				"defaultValue": "demo_sql_pool"
+				"defaultValue": "synapsedemoe2e"
 			},
 			"SparkPoolName": {
 				"type": "string",
