@@ -43,14 +43,14 @@
 						},
 						"type": "BigDataPoolReference"
 					},
-					"executorSize": null,
+					"executorSize": "Small",
 					"conf": {
-						"spark.dynamicAllocation.enabled": null,
-						"spark.dynamicAllocation.minExecutors": null,
-						"spark.dynamicAllocation.maxExecutors": null
+						"spark.dynamicAllocation.enabled": false,
+						"spark.dynamicAllocation.minExecutors": 2,
+						"spark.dynamicAllocation.maxExecutors": 2
 					},
-					"driverSize": null,
-					"numExecutors": null
+					"driverSize": "Small",
+					"numExecutors": 2
 				}
 			},
 			{
@@ -101,12 +101,14 @@
 						},
 						"type": "BigDataPoolReference"
 					},
+					"executorSize": "Small",
 					"conf": {
 						"spark.dynamicAllocation.enabled": null,
-						"spark.dynamicAllocation.minExecutors": null,
-						"spark.dynamicAllocation.maxExecutors": null
+						"spark.dynamicAllocation.minExecutors": 2,
+						"spark.dynamicAllocation.maxExecutors": 2
 					},
-					"numExecutors": null
+					"driverSize": "Small",
+					"numExecutors": 2
 				}
 			},
 			{
@@ -472,19 +474,19 @@
 		"parameters": {
 			"StorageName": {
 				"type": "string",
-				"defaultValue": "synapsee2elake"
+				"defaultValue": "demostoragelayer"
 			},
 			"DatabaseName": {
 				"type": "string",
-				"defaultValue": "synapsee2edw"
+				"defaultValue": "synapsedemoe2e"
 			},
 			"ServerName": {
 				"type": "string",
-				"defaultValue": "synapsee2e"
+				"defaultValue": "demo_sql_pool"
 			},
 			"SparkPoolName": {
 				"type": "string",
-				"defaultValue": "synapsee2espark"
+				"defaultValue": "demosparkpool"
 			},
 			"DatasetSize": {
 				"type": "string",
